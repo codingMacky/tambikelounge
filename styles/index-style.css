@@ -1,4 +1,5 @@
-body {
+body,
+hr {
   margin: 0;
 }
 
@@ -25,7 +26,6 @@ body {
   position: absolute;
   right: 20px;
   user-select: none;
-  cursor: pointer;
 }
 
 .mobile-menu-dropdown-container {
@@ -311,6 +311,5 @@ footer {
     position: absolute;
     right: 50px;
     user-select: none;
-    cursor: pointer;
   }
 }
