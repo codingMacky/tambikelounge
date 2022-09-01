@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/index-style.css" />
+    <title>Tambike lounge</title>
+  </head>
+  <body>
+    <div class="tambike-section">
+      <!-- Header -->
+      <div class="header-container">
+        <div class="tambike-image-container">
+          <img src="./images/tambike-logo.png" class="tambike-image" />
+        </div>
+        <div class="header-tab-text-container">
+          <div class="motorcycle-tab-conntainer">
+            <span class="tab-text">Motorcycles</span>
+            <div class="dropdown-content">
+              <span class="dropdown-item">Suzuki</span>
+              <span class="dropdown-item">Yamaha</span>
+              <span class="dropdown-item">Kawasaki</span>
+              <span class="dropdown-item">Honda</span>
+              <span class="dropdown-item">KTM</span>
+              <span class="dropdown-item">CFMOTO</span>
+            </div>
+          </div>
+          <span class="tab-text" onclick="handleTabClick('Parts & Accessories')"
+            >Parts & Accessories</span
+          >
+          <span class="tab-text" onclick="handleTabClick('Gears')">Gears</span>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu-container">
+          <div
+            class="mobile-menu-icon-container"
+            onclick="handleMobileMenuClick('.mobile-menu-dropdown-container')"
+          >
+            <img src="./images/menu.svg" class="menu-icon" />
+          </div>
+          <div class="mobile-menu-dropdown-container">
+            <div class="mobile-menu-item-motorcycle-tab-container">
+              <span
+                class="mobile-menu-item-text"
+                onclick="handleMobileMenuClick('.mobile-menu-dropdown-content')"
+                >Motorcycles</span
+              >
+              <div class="mobile-menu-dropdown-content">
+                <span class="mobile-menu-dropdown-sub-item">Suzuki</span>
+                <span class="mobile-menu-dropdown-sub-item">Yamaha</span>
+                <span class="mobile-menu-dropdown-sub-item">Kawasaki</span>
+                <span class="mobile-menu-dropdown-sub-item">Honda</span>
+                <span class="mobile-menu-dropdown-sub-item">KTM</span>
+                <span class="mobile-menu-dropdown-sub-item">CFMOTO</span>
+              </div>
+            </div>
+            <span
+              class="mobile-menu-item-text"
+              onclick="handleTabClick('Parts & Accessories')"
+              >Parts & Accessories</span
+            >
+            <span
+              class="mobile-menu-item-text"
+              onclick="handleTabClick('Gears')"
+              >Gears</span
+            >
+          </div>
+        </div>
+        <!-- Mobile menu end -->
+      </div>
+      <!-- Header end -->
+
+      <!-- Carousel -->
+      <div class="carousel-and-dot-container">
+        <div class="carousel-container">
+          <div class="image-container fade">
+            <img src="/images/image1.jpg" class="carousel-image" />
+          </div>
+
+          <div class="image-container fade">
+            <img src="/images/image2.jpg" class="carousel-image" />
+          </div>
+
+          <div class="image-container fade">
+            <img src="/images/image3.jpg" class="carousel-image" />
+          </div>
+
+          <a class="prev" onclick="handleCarouselArrowClick(-1)">❮</a>
+          <a class="next" onclick="handleCarouselArrowClick(1)">❯</a>
+        </div>
+        <div class="carousel-dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <!-- Carousel end -->
+
+      <!-- Company -->
+      <div class="company-container">
+        <span class="our-company-text">Our Company</span>
+        <div class="company-images-container">
+          <div class="company-image-container">
+            <img src="/images/tambike-logo.png" class="company-image" />
+          </div>
+          <div class="company-image-container">
+            <img src="/images/tambike-logo.png" class="company-image" />
+          </div>
+          <div class="company-image-container">
+            <img src="/images/tambike-logo.png" class="company-image" />
+          </div>
+        </div>
+      </div>
+      <!-- Company end -->
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-icon-container">
+          <i class="fa-brands fa-facebook footer-icon -pointer"></i>
+          <i class="fa-brands fa-twitter footer-icon -pointer"></i>
+          <i class="fa-brands fa-instagram footer-icon -pointer"></i>
+          <i class="fa-brands fa-pinterest footer-icon -pointer"></i>
+          <i class="fa-brands fa-youtube footer-icon -pointer"></i>
+          <i class="fa-brands fa-linkedin footer-icon -pointer"></i>
+        </div>
+        <div class="footer-text-container">
+          <p>
+            © 2022 Tambike Lounge. All information contained herein applies to
+            Philippines product only.
+          </p>
+          <p>
+            Vehicle Data Privacy | Privacy Policy | Do Not Sell My Personal
+            Information | Legal Terms and Conditions
+          </p>
+          <p>
+            We use cookies to improve your experience on this site and show you
+            personnalized advertising. To find out more, read our cookie policy.
+          </p>
+          <p class="footer-site-text">
+            <span class="blue-text -pointer">Site Map</span> |
+            <span class="blue-text -pointer">Tambike Lounge</span> |
+            <span class="blue-text -pointer">Contact Us</span>
+          </p>
+          <br />
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+    <script src="/javascript/indexScript.js"></script>
+  </body>
+</html>
