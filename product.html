@@ -11,86 +11,93 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="images/tambike-logo.png" />
     <link rel="stylesheet" href="/styles/product-style.css" />
-    <title>Tambike lounge</title>
-    <!-- <script src="/javascript/partsAndAccessoriesScript.js"></script> -->
+    <title>Products</title>
   </head>
   <body>
-    <div class="parts-and-accessories-section">
-      <!-- Header -->
-      <div class="header-container">
-        <div class="tambike-image-container" onclick="handleLogoClick()">
-          <img src="./images/tambike-logo.png" class="tambike-image" />
-        </div>
-        <div class="header-tab-text-container">
-          <div class="motorcycle-tab-conntainer">
-            <span class="tab-text">Motorcycles</span>
-            <div class="dropdown-content">
-              <span class="dropdown-item">Suzuki</span>
-              <span class="dropdown-item">Yamaha</span>
-              <span class="dropdown-item">Kawasaki</span>
-              <span class="dropdown-item">Honda</span>
-              <span class="dropdown-item">KTM</span>
-              <span class="dropdown-item">CFMOTO</span>
-            </div>
+    <div class="new-design-container">
+      <div class="header-logo-container">
+        <img src="./images/tambike-logo.png" class="tambike-image" />
+      </div>
+      <!-- ------------------------------------ -->
+      <div class="header-tabs-container">
+        <div class="tabs-wrapper">
+          <div class="header-text-container">
+            <span class="header-home-text" onclick="handleHomeClick()"
+              >Home</span
+            >
           </div>
-          <span class="tab-text" onclick="handleTabClick('Parts & Accessories')"
-            >Parts & Accessories</span
-          >
-          <span class="tab-text" onclick="handleTabClick('Gears')">Gears</span>
+          <div class="header-icon-container">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/TambikeGDV/"
+              rel="noreferrer"
+            >
+              <i
+                class="fa-brands fa-facebook header-icon -header-icon-color -pointer"
+              ></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@gdvtambike"
+              rel="noreferrer"
+            >
+              <i
+                class="fa-brands fa-tiktok header-icon -header-icon-color -pointer"
+              ></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://s.lazada.com.ph/s.51Jci"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/lazada-1.svg"
+                alt="lazada"
+                class="-pointer"
+              /> </a
+            ><a
+              target="_blank"
+              href="https://www.shopee.ph/tambikelounge"
+              rel="noreferrer"
+            >
+              <img src="/images/shopee.svg" alt="shopee" class="-pointer" />
+            </a>
+          </div>
         </div>
-        <!-- Mobile menu -->
-        <div class="mobile-menu-container">
+      </div>
+      <!-- ------------------------------------ -->
+      <div class="product-container">
+        <div class="menu-container">
+          <div class="categories-container">
+            <span class="category-title-text">SHOP BY CATEGORIES</span>
+            <hr />
+            <div class="radio-container" id="radioForCategories"></div>
+          </div>
+          <div class="brands-container">
+            <span class="category-title-text">SHOP BY BRAND</span>
+            <hr />
+            <div class="radio-container" id="radioForBrands"></div>
+          </div>
+        </div>
+        <div class="products-container">
+          <div class="product-text-container">
+            <span class="current-category-text" id="currentCategoryId"
+              >All</span
+            >
+            <span class="filter-text" onclick="handleFilterMenuClick()"
+              >Filter</span
+            >
+          </div>
           <div
-            class="mobile-menu-icon-container"
-            onclick="handleMobileMenuClick('.mobile-menu-dropdown-container')"
-          >
-            <img src="./images/menu.svg" class="menu-icon" />
-          </div>
-          <div class="mobile-menu-dropdown-container">
-            <div class="mobile-menu-item-motorcycle-tab-container">
-              <span
-                class="mobile-menu-item-text"
-                onclick="handleMobileMenuClick('.mobile-menu-dropdown-content')"
-                >Motorcycles</span
-              >
-              <div class="mobile-menu-dropdown-content">
-                <span class="mobile-menu-dropdown-sub-item">Suzuki</span>
-                <span class="mobile-menu-dropdown-sub-item">Yamaha</span>
-                <span class="mobile-menu-dropdown-sub-item">Kawasaki</span>
-                <span class="mobile-menu-dropdown-sub-item">Honda</span>
-                <span class="mobile-menu-dropdown-sub-item">KTM</span>
-                <span class="mobile-menu-dropdown-sub-item">CFMOTO</span>
-              </div>
-            </div>
-            <hr />
-            <span
-              class="mobile-menu-item-text"
-              onclick="handleTabClick('Parts & Accessories')"
-              >Parts & Accessories</span
-            >
-            <hr />
-            <span
-              class="mobile-menu-item-text"
-              onclick="handleTabClick('Gears')"
-              >Gears</span
-            >
-          </div>
+            class="list-of-product-container"
+            id="listOfProductContainer"
+          ></div>
         </div>
-        <!-- Mobile menu end -->
       </div>
-      <!-- Header end -->
-
-      <!-- Product list -->
-      <div class="product-detail-container">
-        <div class="product-name-text" id="activeTab"></div>
-        <div
-          class="list-of-product-container"
-          id="listOfProductContainer"
-        ></div>
-      </div>
-      <!-- Product list end -->
     </div>
+
     <!-- Footer -->
     <footer>
       <div class="footer-icon-container">

@@ -37,10 +37,6 @@ function showSlides(n) {
 }
 //Carousel end
 
-//redirection
-function handleTabClick(activeTab) {
+function handleProductClick() {
   location.href = "/product.html";
-  if (typeof Storage !== "undefined") {
-    localStorage.setItem("activeTab", activeTab);
-  }
 }

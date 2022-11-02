@@ -16,6 +16,22 @@ hr {
   position: relative;
 }
 
+.product-tab-text {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.header-product-text-container {
+  padding-right: 25px;
+}
+
+.product-tab-text:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
 /* Mobile */
 .menu-icon {
   width: 50px;

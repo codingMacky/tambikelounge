@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="images/tambike-logo.png" />
     <link rel="stylesheet" href="/styles/index-style.css" />
     <title>Tambike lounge</title>
   </head>
@@ -21,62 +22,11 @@
         <div class="tambike-image-container">
           <img src="./images/tambike-logo.png" class="tambike-image" />
         </div>
-        <div class="header-tab-text-container">
-          <div class="motorcycle-tab-conntainer">
-            <span class="tab-text">Motorcycles</span>
-            <div class="dropdown-content">
-              <span class="dropdown-item">Suzuki</span>
-              <span class="dropdown-item">Yamaha</span>
-              <span class="dropdown-item">Kawasaki</span>
-              <span class="dropdown-item">Honda</span>
-              <span class="dropdown-item">KTM</span>
-              <span class="dropdown-item">CFMOTO</span>
-            </div>
-          </div>
-          <span class="tab-text" onclick="handleTabClick('Parts & Accessories')"
-            >Parts & Accessories</span
+        <div class="header-product-text-container">
+          <span class="product-tab-text" onclick="handleProductClick()"
+            >Products</span
           >
-          <span class="tab-text" onclick="handleTabClick('Gears')">Gears</span>
         </div>
-        <!-- Mobile menu -->
-        <div class="mobile-menu-container">
-          <div
-            class="mobile-menu-icon-container"
-            onclick="handleMobileMenuClick('.mobile-menu-dropdown-container')"
-          >
-            <img src="./images/menu.svg" class="menu-icon" />
-          </div>
-          <div class="mobile-menu-dropdown-container">
-            <div class="mobile-menu-item-motorcycle-tab-container">
-              <span
-                class="mobile-menu-item-text"
-                onclick="handleMobileMenuClick('.mobile-menu-dropdown-content')"
-                >Motorcycles</span
-              >
-              <div class="mobile-menu-dropdown-content">
-                <span class="mobile-menu-dropdown-sub-item">Suzuki</span>
-                <span class="mobile-menu-dropdown-sub-item">Yamaha</span>
-                <span class="mobile-menu-dropdown-sub-item">Kawasaki</span>
-                <span class="mobile-menu-dropdown-sub-item">Honda</span>
-                <span class="mobile-menu-dropdown-sub-item">KTM</span>
-                <span class="mobile-menu-dropdown-sub-item">CFMOTO</span>
-              </div>
-            </div>
-            <hr />
-            <span
-              class="mobile-menu-item-text"
-              onclick="handleTabClick('Parts & Accessories')"
-              >Parts & Accessories</span
-            >
-            <hr />
-            <span
-              class="mobile-menu-item-text"
-              onclick="handleTabClick('Gears')"
-              >Gears</span
-            >
-          </div>
-        </div>
-        <!-- Mobile menu end -->
       </div>
       <!-- Header end -->
 
