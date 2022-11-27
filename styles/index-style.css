@@ -155,7 +155,7 @@ hr {
 
 /* Slider */
 .slider-cotainer {
-  width: 1600px;
+  width: 100%;
   height: 300px;
   margin: auto;
   display: flex;
@@ -194,12 +194,6 @@ hr {
 
 .slide-image-5 {
   background-image: url(/slider-image/slider-image-5.jpg);
-}
-
-@media (max-width: 1600px) {
-  .slider-cotainer {
-    width: 100%;
-  }
 }
 /* Slider end*/
 
@@ -320,7 +314,6 @@ hr {
 .company-image {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 /* Company end */
 
