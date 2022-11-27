@@ -11,6 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <link rel="icon" href="images/tambike-logo.png" />
     <link rel="stylesheet" href="/styles/index-style.css" />
     <title>Tambike lounge</title>
@@ -20,7 +25,10 @@
       <!-- Header -->
       <div class="header-container">
         <div class="tambike-image-container">
-          <img src="./images/tambike-logo.png" class="tambike-image" />
+          <img
+            src="./slider-image/updated-tambike-logo.png"
+            class="tambike-image"
+          />
         </div>
         <div class="header-product-text-container">
           <span class="product-tab-text" onclick="handleProductClick()"
@@ -58,20 +66,65 @@
 
       <!-- Company -->
       <div class="company-container">
-        <span class="our-company-text">Our Company</span>
+        <span class="our-company-text">Gallery</span>
         <div class="company-images-container">
           <div class="company-image-container">
-            <img src="/images/tambike-logo.png" class="company-image" />
+            <img
+              src="/slider-image/gallery-image-1.jpg"
+              class="company-image"
+            />
           </div>
           <div class="company-image-container">
-            <img src="/images/tambike-logo.png" class="company-image" />
+            <img
+              src="/slider-image/gallery-image-2.jpg"
+              class="company-image"
+            />
           </div>
           <div class="company-image-container">
-            <img src="/images/tambike-logo.png" class="company-image" />
+            <img
+              src="/slider-image/gallery-image-3.jpg"
+              class="company-image"
+            />
           </div>
         </div>
       </div>
       <!-- Company end -->
+
+      <!-- Slider -->
+      <div class="slider-cotainer">
+        <div class="slider-sub-container">
+          <div class="slider-wrapper">
+            <div class="slider-images-container">
+              <div>
+                <div class="slider-slide">
+                  <div class="slide-image slide-image-1"></div>
+                </div>
+              </div>
+              <div>
+                <div class="slider-slide">
+                  <div class="slide-image slide-image-2"></div>
+                </div>
+              </div>
+              <div>
+                <div class="slider-slide">
+                  <div class="slide-image slide-image-3"></div>
+                </div>
+              </div>
+              <div>
+                <div class="slider-slide">
+                  <div class="slide-image slide-image-4"></div>
+                </div>
+              </div>
+              <div>
+                <div class="slider-slide">
+                  <div class="slide-image slide-image-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider end -->
 
       <!-- Footer -->
       <footer>

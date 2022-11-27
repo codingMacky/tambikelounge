@@ -1,5 +1,12 @@
 const tambikeProducts = [
   {
+    productName: "Sample svg",
+    price: "Soon",
+    imageUrl: "./slider-image/BENKIA-LEG-BLACK-BAG-bgless.svg",
+    type: "gear&apparels",
+    brand: "benkia",
+  },
+  {
     productName: "BENKIA Black Bag",
     price: "Soon",
     imageUrl: "./tambikeProducts/benkia/benkia-black-bag.png",
@@ -694,6 +701,7 @@ radioForCategories.innerHTML = categories
               </div>
 `
   )
+  .sort()
   .join(" ");
 
 //brand
@@ -707,6 +715,7 @@ radioForBrands.innerHTML = brands
               </div>
   `
   )
+  .sort()
   .join(" ");
 
 let selectedCategory = "";

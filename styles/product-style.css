@@ -16,20 +16,34 @@
   min-height: 100vh;
 }
 
+.header-logo-and-shop-container {
+  position: relative;
+  padding: 20px 0;
+}
+
+.header-shop-icon-and-image-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 0 calc(2%);
+  gap: 20px;
+}
+
 .header-logo-container {
   display: flex;
   justify-content: center;
 }
 
 .tambike-image {
-  width: 250px;
+  width: 300px;
   height: 150px;
 }
 
 .header-tabs-container {
   background-color: rgb(190, 2, 2);
   color: white;
-  margin-top: 20px;
 }
 
 .motorcycle-tab-item,
@@ -51,11 +65,18 @@
   align-items: center;
   max-width: 1366px;
   font-size: 20px;
-  justify-content: space-around;
+  padding: 0 calc(10%);
   margin: auto;
+  height: 40px;
 }
 
-.header-home-text:hover {
+.home-text-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-text-container:hover {
   cursor: pointer;
 }
 
@@ -168,7 +189,6 @@ input[type="radio"] {
   display: flex;
   font-size: 25px;
   font-weight: bold;
-  /* margin-bottom: 20px; */
 }
 
 .product-details-container {
@@ -200,19 +220,13 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.product-item-container:hover .product-image {
-  transform: scale(1.1);
+.product-image:hover {
+  transform: scale(1.5);
 }
 
 .product-image-container {
   text-align: center;
 }
-
-/* .product-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-} */
 
 .product-image {
   width: 100%;
