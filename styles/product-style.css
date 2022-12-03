@@ -195,7 +195,8 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-top: 5px;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .product-name {
@@ -221,7 +222,7 @@ input[type="radio"] {
 }
 
 .product-image:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .product-image-container {
