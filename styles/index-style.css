@@ -392,3 +392,14 @@ footer {
     user-select: none;
   }
 }
+
+@media screen and (max-width: 600px) and (min-width: 360px) {
+  .tambike-image {
+    width: 150px;
+    height: 75px;
+  }
+
+  .product-tab-text {
+    font-size: 15px;
+  }
+}

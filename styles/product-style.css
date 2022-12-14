@@ -257,7 +257,7 @@ input[type="radio"] {
 }
 
 .show {
-  display: block !important;
+  display: flex !important;
 }
 /* Product end */
 /* Content end */
@@ -315,23 +315,65 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) and (min-width: 375px) {
+@media screen and (max-width: 399px) and (min-width: 360px) {
+  .product-shop-image {
+    height: 30px;
+    width: 70px;
+  }
+
+  .product-item-container {
+    width: 140px !important;
+  }
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+  .product-shop-image {
+    height: 40px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 360px) {
   .products-container {
     padding: 0;
   }
 
   .product-item-container {
-    width: 46.9%;
+    width: 46.7% !important;
   }
 
   .header-icon-container {
     gap: 5px;
   }
+
+  .tambike-image {
+    width: 150px;
+    height: 75px;
+  }
+
+  .header-shop-icon-and-image-container {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+  }
 }
 
 @media screen and (max-width: 599px) and (min-width: 501px) {
   .product-item-container {
-    width: 30%;
+    width: 30% !important;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 501px) {
+  .tambike-image {
+    width: 200px;
+    height: 100px;
+  }
+
+  .header-shop-icon-and-image-container {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
   }
 }
 
@@ -359,5 +401,9 @@ footer {
   .products-container {
     width: auto;
     padding: 0;
+  }
+
+  .product-item-container {
+    width: 122px;
   }
 }

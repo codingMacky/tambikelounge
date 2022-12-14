@@ -62,13 +62,6 @@ const tambikeProducts = [
     type: "helmets",
     brand: "astone",
   },
-  // {
-  //   productName: "BELL Helmet Black-Red",
-  //   price: "Soon",
-  //   imageUrl: "./products/bell/helmet-black-red.png",
-  //   type: "helmets",
-  //   brand: "bell",
-  // },
   {
     productName: "BELL Helmet Gloss-Black",
     price: "Soon",
