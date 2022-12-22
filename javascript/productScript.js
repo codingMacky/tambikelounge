@@ -760,7 +760,6 @@ function displayFilteredProduct(activeCategory, activeBrand) {
   document.querySelector("#currentCategoryId").innerText = brandText;
 
   if (activeCategory != "" && activeBrand == "") {
-    console.log("Category");
     document.getElementById("listOfProductContainer").innerHTML =
       tambikeProducts
         .filter((filterByCategory) => filterByCategory.type == activeCategory)
@@ -778,7 +777,6 @@ function displayFilteredProduct(activeCategory, activeBrand) {
         .join("");
   }
   if (activeCategory == "" && activeBrand != "") {
-    console.log("Brand");
     document.getElementById("listOfProductContainer").innerHTML =
       tambikeProducts
         .filter((filterByCategory) => filterByCategory.brand == activeBrand)
@@ -796,7 +794,6 @@ function displayFilteredProduct(activeCategory, activeBrand) {
         .join("");
   }
   if (activeCategory != "" && activeBrand != "") {
-    console.log("Mixed");
     document.getElementById("listOfProductContainer").innerHTML =
       tambikeProducts
         .filter(

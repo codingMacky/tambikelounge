@@ -141,6 +141,7 @@
   justify-content: center;
   padding: 25px;
   margin: auto;
+  position: relative;
 }
 
 .menu-container {
@@ -385,13 +386,19 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .product-container {
-    flex-direction: column;
+    height: 667px;
+    overflow: hidden;
   }
 
   .menu-container {
     display: none;
     border-right: none;
-    margin-bottom: 20px;
+    position: absolute;
+    left: 25px;
+    background-color: white;
+    gap: 15px;
+    padding-right: 20px;
+    border-right: 1px solid grey;
   }
 
   .filter-text {
@@ -401,9 +408,15 @@ footer {
   .products-container {
     width: auto;
     padding: 0;
+    min-width: 310px;
+    overflow-y: scroll;
   }
 
   .product-item-container {
     width: 122px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
