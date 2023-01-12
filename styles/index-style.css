@@ -377,6 +377,11 @@ footer {
   .company-images-container {
     gap: 20px;
   }
+
+  .carousel-container,
+  .carousel-image {
+    height: 280px;
+  }
 }
 
 @media only screen and (min-width: 1001px) {
