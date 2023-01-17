@@ -398,6 +398,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 640px) and (min-width: 421px) {
+  .company-images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 600px) and (min-width: 360px) {
   .tambike-image {
     width: 150px;
